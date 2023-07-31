@@ -31,7 +31,9 @@ app.use('/file', async (req, res, next) => {
   } else {
     // If the photo is not public, validate the token before serving the photo
     validateToken(req, res, async () => {
-      // Assuming validateToken will call the next function if the token is valid
+      if (photo.user_id.toString() !== req.user.id.toString()) {
+        return res.status(401).json({error : "this photo set to private by its own user"})
+    }
       express.static('uploads/usersPhotos')(req, res, next);
     });
   }
