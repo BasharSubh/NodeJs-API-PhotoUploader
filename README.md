@@ -14,8 +14,7 @@ email : contact@basharsubh.me
 password : bashar
 
 example link to a photo privacy set to public,
-https://nodejs-api-photouploader.onrender.com/file/1690829906333-64c8020f8d252c856c643866.jpg
-
+https://nodejs-api-photouploader.onrender.com/file/1690831426974-64c8020f8d252c856c643866.jpg
 ```
 
 ## Features
