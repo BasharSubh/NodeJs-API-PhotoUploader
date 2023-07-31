@@ -2,7 +2,8 @@
 
 This is a Node.js API project that allows users to upload and manage their photos. Users can register, login, upload photos, and view their uploaded photos. The API also supports functionalities like updating photo privacy settings, getting photo details, and tracking photo views.
 
-please note that all api links will spin down with inactivity, thats mean it will take some time to wake up :D 
+- please note that all api links will spin down with inactivity, thats mean it will take some time to wake up :D 
+- please note this Endpoint is for testing purposes only, all uploads will NOT saved on the server, it will auto remove when inactivity
 
 ##### Endpoint URL
 https://nodejs-api-photouploader.onrender.com/
@@ -13,8 +14,6 @@ demo info:
 email : contact@basharsubh.me
 password : bashar
 
-example link to a photo privacy set to public,
-https://nodejs-api-photouploader.onrender.com/file/1690831426974-64c8020f8d252c856c643866.jpg
 ```
 
 ## Features
