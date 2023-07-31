@@ -5,9 +5,12 @@ const connection = require('./config/dbConnection');
 const validateToken = require('./middleware/validateToken');
 const Upload = require('./models/uploadsModel');
 const path = require('path');
+const cors = require('cors')
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors())
 
 connection();
 
