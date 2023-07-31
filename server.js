@@ -43,6 +43,28 @@ app.use('/users', require('./routes/usersRoutes'));
 
 app.use('/uploads', require('./routes/uploadsRoutes'));
 
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to The photo upload API',
+    github: 'https://github.com/BasharSubh/NodeJs-API-PhotoUploader',
+    author: 'Bashar Subh',
+    open_source: true,
+    api_version: '1.0.0',
+    documentation: 'https://github.com/BasharSubh/NodeJs-API-PhotoUploader#readme',
+    endpoints: [
+      {
+        url: '/uploads/',
+        description: 'refer to the documentation for more info',
+      },
+      {
+        url: '/users/',
+        description: 'refer to the documentation for more info',
+      },
+    ],
+  });
+});
+
+
 app.all('*', (req, res, next) => {
   res.status(404);
   next(new Error('Route not found'));
