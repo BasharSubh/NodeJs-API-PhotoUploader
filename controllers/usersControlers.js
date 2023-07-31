@@ -68,7 +68,7 @@ const loginUser = asyncHandler(async (req, res) => {
       }
     },
       process.env.TOKEN,
-      { expiresIn: "150m" }
+      { expiresIn: "30m" }
     )
     res.status(200).json({ uploadToken })
   } else {
