@@ -2,6 +2,23 @@
 
 This is a Node.js API project that allows users to upload and manage their photos. Users can register, login, upload photos, and view their uploaded photos. The API also supports functionalities like updating photo privacy settings, getting photo details, and tracking photo views.
 
+## Features
+- User Registration: Allows users to register and create their profiles.
+- User Login: Authentication system for registered users to log in.
+- Photo Upload: Users can upload their photos to the platform.
+- Photo Privacy Settings: Users can choose whether to make their photos public or private.
+- View Uploaded Photos: Users can view all the photos they have uploaded.
+- Get Photo Details: Retrieve details of a specific photo by its ID.
+- Update Photo Privacy: Update the privacy setting of a photo.
+- Delete Photo: Users can delete their uploaded photos.
+## Technologies Used
+- Node.js: A server-side JavaScript runtime environment for building scalable applications.
+- Express.js: A fast and minimalist web framework for Node.js, used for building the API.
+- MongoDB: A NoSQL database for storing user and photo data.
+- Mongoose: An object data modeling library for MongoDB, used to interact with the database.
+- JSON Web Tokens (JWT): Used for user authentication and authorization.
+- Multer: A middleware for handling file uploads in Express.js.
+- bcrypt: A library for hashing passwords and comparing hashed passwords.
 
 ## API Endpoints and Usage
 ### POST /users/register
